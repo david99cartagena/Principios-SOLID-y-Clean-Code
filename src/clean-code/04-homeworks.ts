@@ -8,12 +8,12 @@
         const redFruits = ['manzana', 'cereza', 'ciruela'];
         return redFruits.includes(fruit);
 
-        // antes
-        // if ( fruit === 'manzana' || fruit === 'cereza'  || fruit === 'ciruela' ) {
-        //     return true;
-        // } else {
-        //     return false;
-        // }
+        /* antes
+        if ( fruit === 'manzana' || fruit === 'cereza'  || fruit === 'ciruela' ) {
+            return true;
+        } else {
+            return false;
+        } */
 
     }
 
@@ -23,16 +23,16 @@
     type FruitColor = 'red' | 'yellow' | 'purple';
     function getFruitsByColor(color: FruitColor): string[] {
 
-        // antes
-        // if (color ==='red') {
-        //     return ['manzana','fresa'];
-        // } else if (color ==='yellow') {
-        //     return ['piña','banana'];
-        // } else if (color ==='purple'){
-        //     return ['moras','uvas'];
-        // }else{
-        //     throw Error('the color must be: red, yellow, purple');
-        // }
+        /* antes
+        if (color ==='red') {
+            return ['manzana','fresa'];
+        } else if (color ==='yellow') {
+            return ['piña','banana'];
+        } else if (color ==='purple'){
+            return ['moras','uvas'];
+        }else{
+            throw Error('the color must be: red, yellow, purple');
+        } */
 
         const fruitsByColor = {
             red: ['manzana', 'fresa'],
@@ -46,17 +46,17 @@
 
         return fruitsByColor[color];
 
-        // opcional valores estrictos        
-        // switch( color ) {
-        //     case 'red':
-        //         return ['manzana','fresa'];
-        //     case 'yellow':
-        //         return ['piña','banana'];
-        //     case 'purple':
-        //         return ['moras','uvas'];
-        //     default:
-        //         throw Error('the color must be: red, yellow, purple');
-        // }
+        /* opcional valores estrictos        
+        switch( color ) {
+            case 'red':
+                return ['manzana','fresa'];
+            case 'yellow':
+                return ['piña','banana'];
+            case 'purple':
+                return ['moras','uvas'];
+            default:
+                throw Error('the color must be: red, yellow, purple');
+        } */
 
     }
 
@@ -69,24 +69,24 @@
 
     function workingSteps() {
 
-        // antes
-        // if (isFirstStepWorking === true) {
-        //     if (isSecondStepWorking === true) {
-        //         if (isThirdStepWorking === true) {
-        //             if (isFourthStepWorking === true) {
-        //                 return 'Working properly!';
-        //             } else {
-        //                 return 'Fourth step broken.';
-        //             }
-        //         } else {
-        //             return 'Third step broken.';
-        //         }
-        //     } else {
-        //         return 'Second step broken.';
-        //     }
-        // } else {
-        //     return 'First step broken.';
-        // }
+        /* antes
+        if (isFirstStepWorking === true) {
+            if (isSecondStepWorking === true) {
+                if (isThirdStepWorking === true) {
+                    if (isFourthStepWorking === true) {
+                        return 'Working properly!';
+                    } else {
+                        return 'Fourth step broken.';
+                    }
+                } else {
+                    return 'Third step broken.';
+                }
+            } else {
+                return 'Second step broken.';
+            }
+        } else {
+            return 'First step broken.';
+        } */
 
         if (!isFirstStepWorking) return 'First step broken.';
 

@@ -1,27 +1,28 @@
 (() => {
 
-    // No aplicando el principio de responsabilidad
+    // No aplicando el principio de responsabilidad unica
 
     type Gender = 'M' | 'F';
 
     class Person {
+        
         // forma larga
-        // public name: string;
-        // public gender: Gender;
-        // public birthDate: Date;
+        /* public name: string;
+        public gender: Gender;
+        public birthDate: Date;
 
-        // constructor(name: string, gender: Gender, birthDate: Date) {
-        //     this.name = name;
-        //     this.gender = gender;
-        //     this.birthDate = birthDate;
-        // }
+        constructor(name: string, gender: Gender, birthDate: Date) {
+            this.name = name;
+            this.gender = gender;
+            this.birthDate = birthDate;
+        } */
 
         // abreviada
         constructor(
             public name: string,
             public gender: Gender,
             public birthDate: Date
-        ){}
+        ) { }
 
     }
 
@@ -29,7 +30,7 @@
     // console.log({ newPerson });
 
     class User extends Person {
-        
+
         public lastAccess: Date;
 
         constructor(
@@ -50,13 +51,13 @@
 
     class UserSettings extends User {
         constructor(
-            public workDirectory :string,
-            public lastOpenFolder:string,
-            email                :string,
-            role                 :string,
-            name                 :string,
-            gender               :Gender,
-            birthDate            :Date
+            public workDirectory: string,
+            public lastOpenFolder: string,
+            email: string,
+            role: string,
+            name: string,
+            gender: Gender,
+            birthDate: Date
 
         ) {
             super(email, role, name, gender, birthDate);
