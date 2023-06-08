@@ -1,4 +1,5 @@
 (() => {
+    
     const temperaturesCelsius = [33.6, 12.34];
 
     const serverIp = "123.123.123.123";
